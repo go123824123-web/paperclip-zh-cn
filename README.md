@@ -7,7 +7,7 @@
 复制这一行命令，粘贴到终端，回车，搞定：
 
 ```bash
-git clone https://github.com/your-username/paperclip-zh-cn.git && cd paperclip-zh-cn && ./setup.sh
+git clone https://github.com/go123824123-web/paperclip-zh-cn.git && cd paperclip-zh-cn && ./setup.sh
 ```
 
 这条命令会自动完成以下所有步骤：
@@ -56,7 +56,7 @@ pnpm 如果没装，脚本会自动帮你装。
 如果你已经装了 Paperclip，只需要加中文：
 
 ```bash
-git clone https://github.com/your-username/paperclip-zh-cn.git
+git clone https://github.com/go123824123-web/paperclip-zh-cn.git
 cd paperclip-zh-cn
 ./install.sh /你的/paperclip/路径
 ```
