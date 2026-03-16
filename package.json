@@ -1,0 +1,16 @@
+{
+  "name": "paperclip-zh-cn",
+  "version": "1.0.0",
+  "description": "Paperclip 中文语言包 - Chinese language pack for Paperclip AI orchestration platform",
+  "author": "chris",
+  "license": "MIT",
+  "keywords": ["paperclip", "i18n", "chinese", "zh-cn", "language-pack"],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "install-lang": "bash install.sh",
+    "uninstall-lang": "bash uninstall.sh"
+  }
+}
