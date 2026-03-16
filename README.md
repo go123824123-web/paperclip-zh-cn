@@ -11,10 +11,11 @@ git clone https://github.com/your-username/paperclip-zh-cn.git && cd paperclip-z
 ```
 
 这条命令会自动完成以下所有步骤：
-1. 下载 Paperclip 到 `~/paperclip`
-2. 安装所有依赖
-3. 安装中文语言包
-4. 询问是否立即启动
+1. **检查环境** — 自动检测 Node.js 版本够不够、有没有 pnpm（没有就自动装）
+2. **下载 Paperclip** — 自动 clone 到 `~/paperclip`
+3. **安装依赖** — 自动 `pnpm install`
+4. **安装中文包** — 复制翻译文件 + 自动打补丁（50+ 组件）
+5. **启动服务** — 询问是否立即启动
 
 如果你想装到指定目录：
 ```bash
