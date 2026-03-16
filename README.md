@@ -49,35 +49,36 @@ pnpm 如果没装，脚本会自动帮你装。
   - 登录/注册页面
   - 适配器配置（Claude/Codex/Gemini 等）
 
-## 其他安装方式
+## 已有 Paperclip？手动安装中文包
 
-### 已有 Paperclip 的情况
-
-如果你已经装了 Paperclip，只需要加中文：
+如果你已经装了 Paperclip，只需要三步：
 
 ```bash
+# 1. 克隆语言包
 git clone https://github.com/go123824123-web/paperclip-zh-cn.git
-cd paperclip-zh-cn
-./install.sh /你的/paperclip/路径
-```
 
-### 手动安装
+# 2. 复制翻译文件到 Paperclip 目录
+cp -r paperclip-zh-cn/src/i18n/ /你的/paperclip/路径/ui/src/i18n/
+cp paperclip-zh-cn/src/context/LanguageContext.tsx /你的/paperclip/路径/ui/src/context/
+cp paperclip-zh-cn/src/pages/LanguageSettings.tsx /你的/paperclip/路径/ui/src/pages/
 
-```bash
-# 复制翻译文件
-cp -r src/i18n/ /path/to/paperclip/ui/src/i18n/
-cp src/context/LanguageContext.tsx /path/to/paperclip/ui/src/context/
-cp src/pages/LanguageSettings.tsx /path/to/paperclip/ui/src/pages/
-
-# 应用补丁
-cd /path/to/paperclip
+# 3. 应用组件补丁
+cd /你的/paperclip/路径
 git apply /path/to/paperclip-zh-cn/paperclip-zh-cn.patch
 ```
 
 ## 卸载
 
+在 Paperclip 目录下执行：
+
 ```bash
+# 还原所有被补丁修改的文件
 cd ~/paperclip && git checkout -- ui/src/
+
+# 删除新增的翻译文件
+rm -f ui/src/i18n/en.ts ui/src/i18n/zh.ts
+rm -f ui/src/context/LanguageContext.tsx
+rm -f ui/src/pages/LanguageSettings.tsx
 ```
 
 ## 项目结构
@@ -85,8 +86,6 @@ cd ~/paperclip && git checkout -- ui/src/
 ```
 paperclip-zh-cn/
 ├── setup.sh                     # 一键安装脚本（推荐）
-├── install.sh                   # 安装到已有 Paperclip
-├── uninstall.sh                 # 卸载脚本
 ├── paperclip-zh-cn.patch        # 组件补丁文件
 └── src/
     ├── i18n/
