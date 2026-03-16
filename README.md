@@ -1,4 +1,4 @@
-# Paperclip 中文语言包
+# Paperclip 汉化包
 
 为 [Paperclip](https://github.com/paperclipai/paperclip) AI 智能体编排平台提供完整的中文界面翻译。
 

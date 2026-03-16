@@ -120,8 +120,8 @@ done
 echo ""
 ok "依赖安装完成"
 
-# ---- 第 3 步: 安装中文语言包 ----
-step 3 4 "安装中文语言包"
+# ---- 第 3 步: 安装汉化包 ----
+step 3 4 "安装汉化包"
 
 PATCH_FILE="$SCRIPT_DIR/paperclip-zh-cn.patch"
 TOTAL_STEPS=5
@@ -157,7 +157,7 @@ progress_bar $CURRENT $TOTAL_STEPS "完成"
 echo ""
 
 if [ "$PATCH_OK" = true ]; then
-    ok "中文语言包安装成功 (50+ 组件已翻译)"
+    ok "汉化包安装成功 (50+ 组件已翻译)"
 else
     warn "补丁部分应用失败，核心翻译文件已安装"
 fi
