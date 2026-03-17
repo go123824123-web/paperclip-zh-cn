@@ -1,6 +1,6 @@
 # Paperclip 汉化包
 
-为 [Paperclip](https://github.com/paperclipai/paperclip) AI 智能体编排平台提供完整的中文界面翻译。
+为 [Paperclip](https://github.com/paperclipai/paperclip) AI 智能体编排平台提供完整的中文界面翻译，500+ 翻译键覆盖全部页面。
 
 ## 一键安装（推荐）
 
