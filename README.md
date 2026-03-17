@@ -64,7 +64,7 @@ cp paperclip-zh-cn/src/pages/LanguageSettings.tsx /你的/paperclip/路径/ui/sr
 
 # 3. 应用组件补丁
 cd /你的/paperclip/路径
-git apply /path/to/paperclip-zh-cn/paperclip-zh-cn.patch
+git apply /path/to/paperclip-zh-cn/src/paperclip-zh-cn.patch
 ```
 
 ## 卸载
@@ -85,16 +85,19 @@ rm -f ui/src/pages/LanguageSettings.tsx
 
 ```
 paperclip-zh-cn/
-├── setup.sh                     # 一键安装脚本（推荐）
-├── paperclip-zh-cn.patch        # 组件补丁文件
+├── README.md                       # 说明文档
+├── setup.sh                        # 一键安装脚本
 └── src/
+    ├── paperclip-zh-cn.patch        # 组件补丁文件
+    ├── CHANGELOG.md                 # 更新日志
+    ├── package.json                 # 项目元信息
     ├── i18n/
-    │   ├── en.ts                # 英文翻译键
-    │   └── zh.ts                # 中文翻译
+    │   ├── en.ts                    # 英文翻译键
+    │   └── zh.ts                    # 中文翻译
     ├── context/
-    │   └── LanguageContext.tsx   # 语言切换上下文
+    │   └── LanguageContext.tsx       # 语言切换上下文
     └── pages/
-        └── LanguageSettings.tsx  # 语言设置页面
+        └── LanguageSettings.tsx      # 语言设置页面
 ```
 
 ## 兼容性

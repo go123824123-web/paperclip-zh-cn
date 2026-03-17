@@ -123,7 +123,7 @@ ok "依赖安装完成"
 # ---- 第 3 步: 安装汉化包 ----
 step 3 4 "安装汉化包"
 
-PATCH_FILE="$SCRIPT_DIR/paperclip-zh-cn.patch"
+PATCH_FILE="$SCRIPT_DIR/src/paperclip-zh-cn.patch"
 TOTAL_STEPS=5
 CURRENT=0
 

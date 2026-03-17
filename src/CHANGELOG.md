@@ -2,11 +2,19 @@
 
 所有重要变更记录在此文件中。
 
+## [1.2.0] - 2026-03-17
+
+### 变更
+- 精简项目根目录结构：根目录仅保留 `README.md` 和 `setup.sh`
+- `CHANGELOG.md`、`package.json`、`paperclip-zh-cn.patch` 移入 `src/` 目录
+- GitHub 首页直接展示 README，不再被文件列表遮挡
+
 ## [1.1.0] - 2026-03-17
 
 ### 变更
 - 移除 `install.sh` 和 `uninstall.sh`，安装/卸载命令直接写入 README
 - 精简项目结构，`setup.sh` 为唯一安装入口
+- 统一用「汉化包」替代「中文语言包」
 
 ## [1.0.2] - 2026-03-17
 
