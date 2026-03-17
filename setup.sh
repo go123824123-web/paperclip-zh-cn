@@ -2,8 +2,8 @@
 set -e
 
 # =========================================
-#  Paperclip 中文版一键安装脚本
-#  One-click installer for Paperclip + Chinese language pack
+#  Paperclip 汉化包 · 一键安装脚本
+#  One-click setup: install Paperclip + apply Chinese translation
 # =========================================
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
